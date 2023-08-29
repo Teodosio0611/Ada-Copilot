@@ -9,12 +9,14 @@
         <el-menu-item index="contact">Contact</el-menu-item>
       </el-menu>
     </el-header>
-    <el-main class="content">
-      <h1>Welcome to Ada-Copilot</h1>
-      <p>Your destination for innovative coding solutions.</p>
-    </el-main>
+
+    <div class="searchBox">
+    <el-input placeholder="请输入检索关键词" v-model="this.keywords" class="box"></el-input>
+    <el-button type="primary" class="button">搜索</el-button>
+    </div>
   </div>
 </template>
+
 
 <style>
 .app {
@@ -40,9 +42,34 @@
   background-color: #d33788;
 }
 
-.content {
-  color: #209748;
-  display: block;
+.searchBox {
+  margin-top: 60px;
+  display: flex;
   padding: 15rem;
+  height: 60px;
+  margin-left: 100px;
+  
+}
+
+.box {
+  width: 70%;
+  height: 80%;
+  
+}
+
+.button {
+  width: 10%;
+  height: 80%;
 }
 </style>
+
+<script>
+export default {
+  data() {
+    return {
+      keywords: '请输入检索关键词'
+    }
+  },
+}
+
+</script>
