@@ -21,12 +21,15 @@
 <style>
 .app {
   font-family: Arial, sans-serif;
-  height: 120vh;
-  background-image: url(imgs/background.png);
+  background-image: url(imgs/cover_11.jpg);
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  height: 100vh;
 }
 
 .header {
-  background-color: #d33788;
+  background-color: #57c4eb;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -39,17 +42,18 @@
 }
 
 .menu {
-  background-color: #d33788;
+  background-color: #57c4eb;
 }
 
+/* let the searchbox in the center of the page */
 .searchBox {
-  margin-top: 60px;
   display: flex;
-  padding: 15rem;
-  height: 60px;
-  margin-left: 100px;
-  
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+  height: 10vh;
 }
+
 
 .box {
   width: 70%;
